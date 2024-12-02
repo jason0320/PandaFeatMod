@@ -74,6 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharaListAvailabeFeatsPatch.cs" />
     <Compile Include="FeatPatch.cs" />
     <Compile Include="Mod_PandaFeatMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

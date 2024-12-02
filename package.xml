@@ -5,7 +5,7 @@
 	<author>Now Happy Panda</author>
 	<loadPriority>100</loadPriority>
 	<description>
-		Allow getting two feats "Rapid Arrow" and "Rapid Cast"
+		Allow getting class, race and hidden feats
 	</description>
 	<version>0.23.46</version>
 </Meta>

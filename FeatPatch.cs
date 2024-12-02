@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using HarmonyLib;
 using UnityEngine;
+using static System.Net.Mime.MediaTypeNames;
+using static Gross;
 
 namespace Mod_PandaFeatMod
 {
@@ -14,27 +17,15 @@ namespace Mod_PandaFeatMod
             SourceManager sources = Core.Instance.sources;
             foreach (SourceElement.Row row in sources.elements.rows)
             {
-                string alias = row.alias;
-                string text = alias;
                 FeatPatch.FeatRewrite(row);
             }
         }
         public static void FeatRewrite(SourceElement.Row ele)
         {
-            string[] array = new string[]
+            if (ele.group == "FEAT" && ele.categorySub.IsEmpty())
             {
-                "Rapid"
-            };
-
-            foreach (string text in array)
-            {
-                if (ele.alias.Contains(text) && ele.alias.Contains("feat"))
-                {
-                    ele.categorySub = "special";
-                }
+                ele.categorySub = "special";
             }
-
         }
-
     }
 }
