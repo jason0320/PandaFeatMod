@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+	<title>Panda's Feat Mod</title>
+	<id>Mod_PandaFeatMod</id>
+	<author>Now Happy Panda</author>
+	<loadPriority>100</loadPriority>
+	<description>
+		Allow getting two feats "Rapid Arrow" and "Rapid Cast"
+	</description>
+	<version>0.23.46</version>
+</Meta>
