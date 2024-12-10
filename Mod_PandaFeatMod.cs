@@ -2,7 +2,7 @@
 using HarmonyLib;
 using UnityEngine;
 
-namespace Mod_PandaFeatMod
+namespace PandaFeatMod
 {
 
     [BepInPlugin("panda.feat.mod", "Panda's Feat Mod", "1.0.0.0")]

@@ -8,7 +8,7 @@ using UnityEngine;
 using static System.Net.Mime.MediaTypeNames;
 using static Gross;
 
-namespace Mod_PandaFeatMod
+namespace PandaFeatMod
 {
     internal class FeatPatch
     {
@@ -25,6 +25,11 @@ namespace Mod_PandaFeatMod
             if (ele.group == "FEAT" && ele.categorySub.IsEmpty())
             {
                 ele.categorySub = "special";
+            }
+            if (ele.group == "FEAT" && ele.alias == "featAdam")
+            {
+                ele.cost.SetValue(1, 0);
+                ele.SetField("max", 10);
             }
         }
     }

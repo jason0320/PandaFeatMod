@@ -3,9 +3,10 @@
 	<title>Panda's Feat Mod</title>
 	<id>Mod_PandaFeatMod</id>
 	<author>Now Happy Panda</author>
+	<tags>General,Balance,Cheat,Skill</tags>
 	<loadPriority>100</loadPriority>
 	<description>
 		Allow getting class, race and hidden feats
 	</description>
-	<version>0.23.46</version>
+	<version>0.23.52</version>
 </Meta>
