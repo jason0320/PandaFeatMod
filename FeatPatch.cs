@@ -34,7 +34,6 @@ namespace PandaFeatMod
             if (ele.group == "FEAT" && ele.alias == "featGrowParts")
             {
                 ele.cost.SetValue(1, 0);
-                ele.SetField("max", 20);
             }
         }
     }
