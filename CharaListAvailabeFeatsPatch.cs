@@ -18,7 +18,7 @@ class CharaListAvailabeFeatsPatch
         {
             Feat feat = Act.CC.elements.GetOrCreateElement(item.id) as Feat;
             int num = ((feat.ValueWithoutLink <= 0) ? 1 : (feat.ValueWithoutLink + 1));
-            if (num <= feat.source.max && (feat.HasTag("class") || feat.HasTag("hidden") ||feat.HasTag("innate")) && (!pet || !feat.HasTag("noPet")) && (showAll || feat.IsPurchaseFeatReqMet(Act.CC.elements)))
+            if (num <= feat.source.max && (feat.HasTag("class") || feat.HasTag("hidden") || feat.HasTag("innate")) && (!pet || !feat.HasTag("noPet")) && (showAll || feat.IsPurchaseFeatReqMet(Act.CC.elements)))
             {
                 __result.Add(Element.Create(feat.id, num) as Feat);
             }
